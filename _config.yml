@@ -1,0 +1,38 @@
+url: '//'
+baseurl: ''
+incremental: true
+
+theme: minima
+permalink: /:year/:month/:title
+
+timezone: America/Sao_Paulo
+disqus:
+    shortname: philosoftware
+google_analytics: UA-85188226-1
+
+title: Philosoftware
+email: israel.faria@gmail.com
+description: Philosoftware, an indie software development company.
+twitter_username: israelfaria
+github_username:  israelfaria
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: default
+  -
+    scope:
+      path: 'pages'
+    values:
+      layout: page
+
+exclude: [
+  'CNAME',
+  'README.md',
+  'Rakefile',
+  'LICENSE',
+  'Gemfile.lock',
+  'Gemfile'
+]
